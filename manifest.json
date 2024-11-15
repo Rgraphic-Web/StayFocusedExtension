@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Stay Focused",
+    "version": "1.0",
+    "description": "Shows an overlay on YouTube with input for link and ability to remove elements.",
+    "permissions": [
+      "tabs",
+      "activeTab",
+      "scripting",
+      "storage"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["https://www.youtube.com/"],
+        "js": ["contentScript.js"]
+      }
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon.png"
+    }
+  }
+  

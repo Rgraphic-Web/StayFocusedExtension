@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Activate Overlay</title>
+    <style>
+      *{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: aliceblue;
+      }
+      #activateOverlay{
+        background-color: rgb(162, 255, 255);
+        border: none;
+        color: darkblue;
+        padding: 10px;
+        border-radius: 10px;
+      }
+      #activateOverlay:hover{
+        background-color: rgb(255, 158, 141);
+        color: rgb(138, 0, 0);
+      }
+      #create-button{
+        background-color: rgb(204, 255, 255);
+        border: none;
+        color: darkblue;
+        padding: 10px;
+        border-radius: 10px;
+      }
+      #create-button:hover{
+        background-color: rgb(255, 204, 204);
+        border: none;
+        color: rgb(139, 0, 0);
+      }
+      </style>
+  </head>
+  <body>
+    
+    <button id="activateOverlay">Activate Overlay</button>
+    <h2>Create a Button to Navigate</h2>
+    <label for="link-name">Button Name:</label>
+    <input type="text" id="link-name" placeholder="Enter button name"><br><br>
+
+    <label for="link-url">Link URL:</label>
+    <input type="url" id="link-url" placeholder="Enter link URL"><br><br>
+
+    <button id="create-button">Create Navigation Button</button>
+    <script src="popup.js"></script>
+  </body>
+</html>
